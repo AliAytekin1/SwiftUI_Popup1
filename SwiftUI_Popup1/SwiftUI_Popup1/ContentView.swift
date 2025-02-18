@@ -55,7 +55,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.orange)
                 }).padding()
-            }.padding()
+            }.blur(radius: $gorunsunPopup.wrappedValue ? 3 : 0)
             
             
             if $gorunsunPopup.wrappedValue{
